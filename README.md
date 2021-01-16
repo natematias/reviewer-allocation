@@ -3,7 +3,10 @@
 
 Do you need to assign reviewers to applicants in some kind of decision-making process? I wrote this code to streamline a few reviewer allocation processes in my own work, and I have published this github repository to have a single place to document that code. 
 
-This software converts the problem of reviewer allocation into a "min-cost flow" optimization problem. It's not novel in any way. If you took an undergrad course in advanced algorithms or optimization, this would be a basic technique, and you might have better ways to solve this problem. 
+This software converts the problem of reviewer allocation into a "min-cost flow" optimization problem. It's not novel in any way. If you took an undergrad course in advanced algorithms or optimization, this would be a basic technique, and you might have better ways to solve this problem. This code works in situations where:
+* Every application needs to be reviewed by N reviewers
+* Each reviewer has a maximum number of reviews
+* You have a human-determined priority ranking of who would be the most appropriate reviewer
 
 You can read more here about the general problem and the `ortools` library I used to carry this out. The code uses Python 3.9 and jupyter notebook.
 
